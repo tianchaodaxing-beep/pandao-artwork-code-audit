@@ -2,7 +2,7 @@
 
 Compare a batch of packaging proofs with an independently approved product list. Catch codes that agree with each other but identify the wrong SKU, conflicting linear and 2D codes, missing artwork pages, unlisted pages and exact repeated artwork. Download an annotated review packet without uploading artwork to a server.
 
-[Working browser demo](https://tianchaodaxing-beep.github.io/pandao-artwork-code-audit/#demo) · [Version and downloads](https://github.com/tianchaodaxing-beep/pandao-artwork-code-audit/releases/tag/v0.1.0) · [Contact](mailto:tianchaodaxing@gmail.com)
+[Working browser demo](https://tianchaodaxing-beep.github.io/pandao-artwork-code-audit/#demo) · [Version and downloads](https://github.com/tianchaodaxing-beep/pandao-artwork-code-audit/releases/tag/v0.1.1) · [Contact](mailto:tianchaodaxing@gmail.com)
 
 ![A real decoded sample proof with numbered barcode locations](docs/samples/flagged-page.png)
 
@@ -26,7 +26,7 @@ node bin/audit.mjs --manifest docs/samples/approved.csv --artwork docs/samples/p
 Or install the release package:
 
 ```sh
-npm install -g ./pandao-artwork-code-audit-0.1.0.tgz
+npm install -g ./pandao-artwork-code-audit-0.1.1.tgz
 artwork-code-audit --manifest approved.csv --artwork proof-a.pdf --artwork proof-b.png --out batch-review
 ```
 

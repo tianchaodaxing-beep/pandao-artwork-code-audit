@@ -1,4 +1,4 @@
-export const VERSION = '0.1.0';
+export const VERSION = '0.1.1';
 export const LIMITS = { fileBytes: 100_000_000, totalBytes: 300_000_000, manifestBytes: 1_000_000, pages: 200, pagePixels: 24_000_000, pdfDpi: 200, rows: 2000 };
 export function csvRows(text) {
   if (new TextEncoder().encode(text).length > LIMITS.manifestBytes) throw Error('The approved CSV must be under 1 MB.');

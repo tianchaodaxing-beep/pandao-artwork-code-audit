@@ -1,3 +1,8 @@
+# 0.1.1
+
+- Use fixed English file-selection controls independently of the browser locale.
+- Preserve local batch processing and review downloads.
+
 # 0.1.0
 
 - Audit approved file/page/SKU/GTIN CSV rows against actual PDF, PNG and JPEG barcode decoding.

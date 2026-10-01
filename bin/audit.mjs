@@ -5,7 +5,7 @@ import { runAudit } from '../docs/engine.mjs';
 import { packetFiles, packetZip } from '../docs/packet.mjs';
 import { LIMITS } from '../docs/core.mjs';
 const args = process.argv.slice(2);
-const help = 'Artwork Code Audit 0.1.0\n\nUsage: artwork-code-audit --manifest approved.csv --artwork proof.pdf [--artwork image.png] --out review-folder [--fail-on-review]\n\nExit codes: 0 completed; 1 input/runtime error; 2 review required when --fail-on-review is set.\nOutput folders must not already exist. Files are processed locally.\nContact: tianchaodaxing@gmail.com\n';
+const help = 'Artwork Code Audit 0.1.1\n\nUsage: artwork-code-audit --manifest approved.csv --artwork proof.pdf [--artwork image.png] --out review-folder [--fail-on-review]\n\nExit codes: 0 completed; 1 input/runtime error; 2 review required when --fail-on-review is set.\nOutput folders must not already exist. Files are processed locally.\nContact: tianchaodaxing@gmail.com\n';
 async function main() {
   if (!args.length || args.includes('--help') || args.includes('-h')) { console.log(help); return; }
   let manifest, out, fail = false; const artwork = [];

@@ -1,6 +1,6 @@
 {
   "name": "pandao-artwork-code-audit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Audit packaging proof pages against an approved GTIN manifest, including linear and Digital Link code agreement, missing pages and duplicate artwork.",
   "type": "module",
   "bin": {
