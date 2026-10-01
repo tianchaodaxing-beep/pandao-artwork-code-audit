@@ -1,0 +1,86 @@
+{
+  "pdf_source_pages": [
+    {
+      "page": 1,
+      "texts": [
+        "9506000134352",
+        "https://id.example.com/01/09506000134352"
+      ]
+    },
+    {
+      "page": 2,
+      "texts": [
+        "9506000134369",
+        "https://id.example.com/01/09506000134352"
+      ]
+    },
+    {
+      "page": 3,
+      "texts": [
+        "9506000134369",
+        "https://id.example.com/01/09506000134369"
+      ]
+    },
+    {
+      "page": 4,
+      "texts": [
+        "9506000134352"
+      ]
+    },
+    {
+      "page": 5,
+      "texts": [
+        "9506000134369",
+        "https://id.example.com/01/09506000134369"
+      ]
+    },
+    {
+      "page": 6,
+      "texts": [
+        "9506000134369",
+        "https://id.example.com/01/09506000134369"
+      ]
+    },
+    {
+      "page": 7,
+      "texts": []
+    }
+  ],
+  "images": {
+    "clean.png": [
+      "9506000134352",
+      "https://id.example.com/01/09506000134352"
+    ],
+    "clean.jpg": [
+      "9506000134352",
+      "https://id.example.com/01/09506000134352"
+    ],
+    "rotated.png": [
+      "9506000134369",
+      "https://id.example.com/01/09506000134369"
+    ],
+    "unknown.png": [
+      "9506000134352",
+      "https://example.com/help"
+    ],
+    "blank.png": [],
+    "ean8.png": [
+      "96385074"
+    ],
+    "upca.png": [
+      "0036000291452"
+    ],
+    "datamatrix.png": [
+      "https://id.example.com/01/09506000134352"
+    ],
+    "damaged.png": [],
+    "wrong-host.png": [
+      "9506000134352",
+      "https://other.example.com/01/09506000134352"
+    ]
+  },
+  "gtins": [
+    "09506000134352",
+    "09506000134369"
+  ]
+}

@@ -1,0 +1,8 @@
+file,page,sku,gtin,linear_count,link_count,link_host
+proofs.pdf,1,SKU-A,09506000134352,1,1,id.example.com
+proofs.pdf,2,SKU-B,09506000134369,1,1,id.example.com
+proofs.pdf,3,SKU-A,09506000134352,1,1,id.example.com
+proofs.pdf,4,SKU-A,09506000134352,1,1,id.example.com
+proofs.pdf,5,SKU-A,09506000134352,1,1,id.example.com
+proofs.pdf,6,SKU-B,09506000134369,1,1,id.example.com
+proofs.pdf,8,SKU-A,09506000134352,1,1,id.example.com

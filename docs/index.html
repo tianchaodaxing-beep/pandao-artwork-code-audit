@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Catch wrong-product codes across packaging proofs. Compare PDFs and images with an approved GTIN list, then download an annotated review packet. Runs locally in your browser.">
+  <title>Artwork Code Audit — PANDAO</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top"><a class="brand" href="#">PANDAO<span> / ARTWORK CODE AUDIT</span></a><nav><a href="#demo">Open audit</a><a href="https://github.com/tianchaodaxing-beep/pandao-artwork-code-audit">Source</a><a href="mailto:tianchaodaxing@gmail.com">Contact</a></nav></header>
+  <main>
+    <section class="hero">
+      <div><p class="eyebrow">PACKAGING / PRE-APPROVAL</p><h1>Two codes agree.<br>But is it the<br><em>right product?</em></h1><p class="intro">Check every proof against your approved product list. Find swapped GTINs, conflicting codes, missing pages and repeated artwork before you approve the batch.</p><div class="actions"><a class="button" href="#demo">Check a batch <span>↗</span></a><a class="text-link" href="https://github.com/tianchaodaxing-beep/pandao-artwork-code-audit/releases/tag/v0.1.0">Get the local CLI →</a></div><p class="privacy">Your files stay on this device. No account. No upload.</p></div>
+      <figure class="proof-card"><div class="card-bar"><span class="badge review">REVIEW REQUIRED</span><span>PROOFS.PDF / PAGE 2</span></div><img src="samples/flagged-page.png" alt="Sample packaging proof with a linear barcode and a QR code outlined and numbered"><figcaption><span class="issue-dot"></span><div><strong>Different products on the same proof</strong><p>Linear GTIN: 09506000134369<br>QR GTIN: 09506000134352</p></div></figcaption><div class="sample-note">Synthetic example · Run the sample below</div></figure>
+    </section>
+    <section class="benefits" aria-label="Workflow"><div><span>01</span><h2>Approve the data</h2><p>One CSV row for each file, page and product.</p></div><div><span>02</span><h2>Check the whole batch</h2><p>PDF, PNG and JPEG. Read the codes on each page.</p></div><div><span>03</span><h2>Send a clear review</h2><p>Numbered previews, page findings and a downloadable packet.</p></div></section>
+    <section id="demo" class="workspace">
+      <div class="section-title"><div><p class="eyebrow">LOCAL BATCH AUDIT</p><h2>From approved list to marked proof.</h2></div><span class="small-label">VERSION 0.1.0 / MIT</span></div>
+      <div class="input-panel">
+        <div class="input-box"><label for="manifest">1 / Approved product CSV</label><input id="manifest" type="file" accept=".csv,text/csv"><p id="manifest-name">No approved list selected</p><a href="samples/approved.csv" download>Download sample CSV</a></div>
+        <div class="input-box"><label for="artwork">2 / Artwork proofs</label><input id="artwork" type="file" accept=".pdf,.png,.jpg,.jpeg,application/pdf,image/png,image/jpeg" multiple><p id="artwork-name">Select one or more artwork files</p><a href="samples/proofs.pdf" download>Download sample PDF</a></div>
+        <div class="run-box"><button id="run" class="button" disabled>Audit my files ↗</button><button id="sample" class="secondary">Try the 7-page sample</button><button id="cancel" class="secondary" hidden>Cancel audit</button></div>
+      </div>
+      <p class="scope">EAN-8, EAN-13 and UPC-A; QR or Data Matrix containing an uncompressed GS1 Digital Link. Up to 200 pages, 100 MB per file, 300 MB per batch.</p>
+      <p id="status" class="status" role="status" aria-live="polite">Choose your files, or try the synthetic sample with deliberate mistakes.</p>
+      <div id="results" hidden>
+        <div class="result-top"><div class="metrics"><div><strong id="total">0</strong><span>Review items</span></div><div><strong id="matched">0</strong><span>Matched</span></div><div><strong id="review">0</strong><span>Need review</span></div></div><button id="download" class="button">Download review packet ↓</button></div>
+        <div class="result-grid"><div class="page-list"><label for="filter">Show</label><select id="filter"><option value="all">All pages</option><option value="review">Needs review</option><option value="matched">Matched</option></select><div id="pages"></div></div><article id="detail" class="detail"></article></div>
+      </div>
+    </section>
+    <section class="usage"><div><p class="eyebrow">WHO IT IS FOR</p><h2>Many products.<br>One approval deadline.</h2><p>For brand teams, artwork studios and print coordinators working across product variants. Keep the approved list separate from the proof so a wrong product cannot pass just because its two codes match.</p></div><div><h3>Before you approve</h3><p>“Matched” confirms supported code data agrees with your list. Check flagged pages manually. Unreadable or unsupported codes remain review items.</p><p>Use a physical barcode verifier for printed quality and a GS1 specialist for standards certification. This audit does not certify printing, company ownership or complete Digital Link syntax.</p><h3>Need a workflow integration?</h3><p><a href="mailto:tianchaodaxing@gmail.com">tianchaodaxing@gmail.com</a></p></div></section>
+  </main>
+  <footer><span>PANDAO / Artwork Code Audit</span><div><a href="https://github.com/tianchaodaxing-beep/pandao-artwork-code-audit">GitHub</a><a href="https://github.com/tianchaodaxing-beep/pandao-artwork-code-audit/releases/tag/v0.1.0">Downloads</a><a href="https://tianchaodaxing-beep.github.io/pandao-open-tools/">More tools</a></div></footer>
+  <script type="module" src="app.mjs"></script>
+</body></html>
